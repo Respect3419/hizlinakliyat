@@ -2,32 +2,22 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16896813952">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16896813952');
-</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="https://hizlinakliyatt.com/" />
-  <meta name="description" content="Hızlı Nakliyat; evden eve nakliye, parça eşya taşıma, parsiyel yük, şehirler arası nakliye ve asansörlü taşıma hizmetleri sunar. İstanbul, Ankara ve Türkiye'nin 81 iline güvenli taşıma." />
+  <meta name="description" content="EPN Nakliyat; evden eve nakliye, parça eşya taşıma, parsiyel yük, şehirler arası nakliye ve asansörlü taşıma hizmetleri sunar. İstanbul, Ankara ve Türkiye'nin 81 iline güvenli taşıma." />
   <meta name="keywords" content="nakliyat, evden eve nakliye, parça eşya taşıma, parsiyel yük taşıma, şehirler arası nakliye, İstanbul nakliye, Ankara nakliye, asansörlü nakliye" />
   <meta name="robots" content="index, follow" />
-  <meta name="author" content="Hızlı Nakliyat" />
+  <meta name="author" content="EPN Nakliyat" />
   <meta name="geo.region" content="TR-34" />
   <meta name="geo.placename" content="İstanbul" />
   <meta name="theme-color" content="#f97316" />
-  <meta property="og:title" content="Hızlı Nakliyat | Evden Eve Nakliye" />
+  <meta property="og:title" content="EPN Nakliyat | Evden Eve Nakliye" />
   <meta property="og:description" content="Güvenli, hızlı ve sigortalı nakliye hizmeti. Ücretsiz teklif alın, WhatsApp'tan hemen ulaşın." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hizlinakliyatt.com/" />
   <meta property="og:locale" content="tr_TR" />
   <meta name="twitter:card" content="summary_large_image" />
-  <title>İstanbul Ankara Nakliyat | Parça Eşya & Parsiyel Yük | Hızlı Nakliyat</title>
+  <title>İstanbul Ankara Nakliyat | Parça Eşya & Parsiyel Yük | EPN Nakliyat</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -156,7 +146,7 @@
   {
     "@context": "https://schema.org",
     "@type": "MovingCompany",
-    "name": "Hızlı Nakliyat",
+    "name": "EPN Nakliyat",
     "telephone": "+90 551 408 99 34",
     "address": {
       "@type": "PostalAddress",
@@ -172,7 +162,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="logo">Hızlı Nakliyat</div>
+      <div class="logo">EPN Nakliyat</div>
       <button class="mobile-menu" onclick="toggleMenu()">Menü</button>
       <nav class="nav-links" id="navLinks">
         <a href="#anasayfa">Ana Sayfa</a>
@@ -222,7 +212,7 @@
             <h2>Profesyonel nakliye deneyimi</h2>
             <p>Yılların deneyimiyle eşyalarınızı kendi eşyamız gibi taşıyoruz.</p>
           </div>
-          <p>Hızlı Nakliyat olarak müşteri memnuniyetini önceliğimiz yapıyoruz. Ekspertiz, paketleme, taşıma ve montaj süreçlerinde şeffaf fiyatlandırma ve güvenilir hizmet sunuyoruz.</p>
+          <p>EPN Nakliyat olarak müşteri memnuniyetini önceliğimiz yapıyoruz. Ekspertiz, paketleme, taşıma ve montaj süreçlerinde şeffaf fiyatlandırma ve güvenilir hizmet sunuyoruz.</p>
           <div class="stats">
             <div class="stat"><strong>12+</strong>Yıl Deneyim</div>
             <div class="stat"><strong>8.500+</strong>Başarılı Taşıma</div>
@@ -416,7 +406,7 @@
   </a>
 
   <footer>
-    <div class="container">© 2026 Hızlı Nakliyat. Tüm hakları saklıdır.</div>
+    <div class="container">© 2026 EPN Nakliyat. Tüm hakları saklıdır.</div>
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -820,7 +810,7 @@
 
     function getLeads() {
       try {
-        return JSON.parse(localStorage.getItem('hizliNakliyatLeads') || '[]');
+        return JSON.parse(localStorage.getItem('epnNakliyatLeads') || '[]');
       } catch (e) {
         return [];
       }
@@ -829,7 +819,7 @@
     function saveLead(lead) {
       const leads = getLeads();
       leads.unshift(lead);
-      localStorage.setItem('hizliNakliyatLeads', JSON.stringify(leads.slice(0, 200)));
+      localStorage.setItem('epnNakliyatLeads', JSON.stringify(leads.slice(0, 200)));
     }
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -876,35 +866,5 @@
       });
     });
   </script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
-  let formStart = Date.now();
-
-  if (form) {
-    form.addEventListener("submit", function (e) {
-
-      const botField = document.querySelector('input[name="bot-field"]');
-      if (botField && botField.value) {
-        e.preventDefault();
-        return;
-      }
-
-      if (Date.now() - formStart < 1500) {
-        e.preventDefault();
-        return;
-      }
-
-      const tel = document.querySelector('input[name="telefon"]');
-      if (tel && tel.value.replace(/\D/g, "").length < 10) {
-        e.preventDefault();
-        alert("Geçerli telefon giriniz");
-        return;
-      }
-
-    });
-  }
-});
-</script>
 </body>
 </html>
